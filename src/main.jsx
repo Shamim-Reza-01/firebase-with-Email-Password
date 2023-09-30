@@ -9,6 +9,7 @@ import Router from './Router/Router';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Resiter from './Components/Resiter';
+import CustomeLogin from './Components/CustomeLogin';
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,16 @@ const router = createBrowserRouter([
         element:<Home></Home>
       },
       {
-        path : "/login",
+        path : "/register", //register ar kaj login a kora hoye geche thai ai ta kora hoyeche
         element : <Login></Login>
       },
       {
-        path : "/register",
+        path : "/login", // ar thai akhaneo register ar jaigai login ar kaj kora hoyeche.
         element :<Resiter></Resiter>
+      },
+      {
+        path :'/customlogin',
+        element :<CustomeLogin></CustomeLogin>
       }
     ]
   },
